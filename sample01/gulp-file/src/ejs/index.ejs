@@ -1,0 +1,17 @@
+<% const page='home'; %>
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./includes/_head.ejs',{meta:data.pageMeta[page]}); %>
+
+  <body>
+    <%- include('./includes/_header.ejs',{meta:data.pageMeta[page]}); %> <%-
+    include('./includes/_main.ejs',{meta:data.pageMeta[page]}); %> <%-
+    include('./includes/_footer.ejs',{meta:data.pageMeta[page]}); %>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

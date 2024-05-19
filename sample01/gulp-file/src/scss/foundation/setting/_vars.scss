@@ -1,0 +1,22 @@
+// 変数のcode
+
+//color
+$color-black: #4e4e4e;
+$color-white: #ffffff;
+$color-yellow: #ffdd00;
+
+/*
+** box-shadow
+*/
+$box_shadow: 2px 2px 4px $color-black;
+
+/*
+** text-shadow
+*/
+$text_shadow: 2px 2px 4px $color-black;
+
+/*
+** コンテンツ・ページ幅
+*/
+$page-width: 1440px;
+$content-width: 968px;

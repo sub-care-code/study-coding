@@ -1,0 +1,42 @@
+/*
+** pxをremに変換する
+** $baseFontsizeを基準にする
+*/
+$baseFontsize: 16;
+@function rem($pixel) {
+  @return $pixel / $baseFontsize * 1rem;
+}
+
+/*
+** pxをvwに変換
+** $vieportを基準にする
+*/
+$viewport: 1400;
+@function vw($pixel) {
+  @return ($pixel / $viewport * 100) + vw;
+}
+
+/*
+** line-heightの設定
+*/
+@mixin l_height($pixels, $height) {
+  font-size: $pixels * 1px;
+  line-height: $height / $pixels;
+}
+/* 呼び出し例
+.class {
+  @include l_height(font-size , 行送り);
+}
+*/
+
+/*
+** letter-spacingの設定
+*/
+@mixin l_spacing($spacing) {
+  letter-spacing: ($spacing / 1000) + em;
+}
+/* 呼び出し例
+.class {
+	@include l_spacing(200);
+}
+*/

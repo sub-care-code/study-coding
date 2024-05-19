@@ -1,0 +1,16 @@
+<head>
+  <meta charset="UTF-8" />
+  <title><%= meta.title %>｜SiteName</title>
+  <meta name="description" content="<%= meta.description %>" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+  />
+
+  <!-- ejsのメタデータにswiperCssがあったら読み込む -->
+  <% if(meta.swiperCss) { %>
+  <link rel="stylesheet" href="<%= meta.swiperCss %>swiper.min.css" />
+  <% } %>
+  <link rel="stylesheet" href="<%= meta.stylePath %>style.css" />
+</head>

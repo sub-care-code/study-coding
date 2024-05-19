@@ -1,0 +1,29 @@
+@use '../setting' as *;
+//ブレークポイント
+$breakpoints: (
+  'sm': 576,
+  'md': 768,
+  'lg': 992,
+  'xl': 1200,
+  'xxl': 1440,
+  'full': 1500,
+) !default;
+//メディアクエリ
+
+@mixin mq($breakpoint: md, $type: max) {
+  $width: 0;
+  @if $type == min {
+    $width: map-get($breakpoints, $breakpoint) + 1;
+  } @else {
+    $width: map-get($breakpoints, $breakpoint);
+  }
+  @media screen and (#{$type}-width: #{$width}px) {
+    @content;
+  }
+}
+//メディアクエリの使い方
+/*
+@include mq(md) {
+font-size:rem(16);
+}
+*/

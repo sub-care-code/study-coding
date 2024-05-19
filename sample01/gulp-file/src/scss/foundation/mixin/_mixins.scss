@@ -1,0 +1,42 @@
+@use "../setting" as *;
+//画像のアスペクト比の調整
+@mixin cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+// topページのbg透かし
+@mixin l-bg-image {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("img/info-bg-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+// aタグを隠す
+@mixin visually-hidden {
+  position: absolute !important;
+  top: 10;
+  left: 30;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

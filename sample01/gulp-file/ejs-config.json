@@ -1,0 +1,23 @@
+{
+  "data": {
+    "pageMeta": {
+      "home": {
+        "title": "HOME",
+        "description": "Site Description",
+        "stylePath": "./assets/css/",
+        "scriptPath": "./assets/js/",
+        "imgPath": "./assets/images/",
+        "linkPath": "./",
+        "swiperCss": "./assets/css/vendors/"
+      },
+      "contact": {
+        "title": "CONTACT",
+        "description": " Contact Description",
+        "stylePath": "../assets/css/",
+        "scriptPath": "../assets/js/",
+        "imgPath": "../assets/images/",
+        "linkPath": "../"
+      }
+    }
+  }
+}

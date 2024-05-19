@@ -1,0 +1,29 @@
+/*
+** ブロック要素の真ん中にレイアウト
+*/
+@mixin marginx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+** セクションのbottom設定
+*/
+@mixin bottom-auto {
+  margin-bottom: 6rem;
+}
+
+/*
+** セクションのTOP設定
+*/
+@mixin top-auto {
+  padding-top: 6rem;
+}
+
+/*
+** page-innerの余白
+*/
+@mixin page-inner {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
