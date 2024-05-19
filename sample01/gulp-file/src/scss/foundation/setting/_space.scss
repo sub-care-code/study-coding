@@ -7,20 +7,6 @@
 }
 
 /*
-** セクションのbottom設定
-*/
-@mixin bottom-auto {
-  margin-bottom: 6rem;
-}
-
-/*
-** セクションのTOP設定
-*/
-@mixin top-auto {
-  padding-top: 6rem;
-}
-
-/*
 ** page-innerの余白
 */
 @mixin page-inner {

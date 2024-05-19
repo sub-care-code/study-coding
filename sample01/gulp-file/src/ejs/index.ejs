@@ -5,6 +5,7 @@
 
   <body>
     <%- include('./includes/_header.ejs',{meta:data.pageMeta[page]}); %> <%-
+    include('./includes/_mv.ejs',{meta:data.pageMeta[page]});%> <%-
     include('./includes/_main.ejs',{meta:data.pageMeta[page]}); %> <%-
     include('./includes/_footer.ejs',{meta:data.pageMeta[page]}); %>
     <script
